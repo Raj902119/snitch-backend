@@ -1,4 +1,4 @@
-import { razorpayInstance } from "../index.js";
+import { razorpayInstance } from "../index.mjs";
 import crypto from "crypto";
 import Payment from "../modals/Payment.js";
 
