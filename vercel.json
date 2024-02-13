@@ -1,0 +1,96 @@
+
+{
+  "version": 2,
+  "builds": [
+    {
+      "src": "index.js",
+      "use": "@vercel/node"
+    },
+    {
+      "src": "build/**",
+      "use": "@vercel/static"
+    },
+  {
+    "src": "node_modules/**",
+  "use": "@vercel/static"
+  }
+  ],
+  "routes": [
+    {
+      "src": "/auth/(.*)",
+      "dest": "index.js"
+    },
+    {
+      "src": "/product/(.*)",
+      "dest": "index.js"
+    },
+    {
+      "src": "/category/(.*)",
+      "dest": "index.js"
+    },
+    {
+      "src": "/brand/(.*)",
+      "dest": "index.js"
+    },
+    {
+      "src": "/user/(.*)",
+      "dest": "index.js"
+    },
+    {
+      "src": "/cart/(.*)",
+      "dest": "index.js"
+    },
+    {
+      "src": "/order/(.*)",
+      "dest": "index.js"
+    },
+    {
+      "src": "/api/(.*)",
+      "dest": "index.js"
+    },
+    {
+      "src": "/auth",
+      "dest": "index.js"
+    },
+    {
+      "src": "/product",
+      "dest": "index.js"
+    },
+    {
+      "src": "/category",
+      "dest": "index.js"
+    },
+    {
+      "src": "/brand",
+      "dest": "index.js"
+    },
+    {
+      "src": "/user",
+      "dest": "index.js"
+    },
+    {
+      "src": "/cart",
+      "dest": "index.js"
+    },
+    {
+      "src": "/order",
+      "dest": "index.js"
+    },
+    {
+      "src": "/api",
+      "dest": "index.js"
+    },
+    {
+      "src": "/api/getkey",
+      "dest": "index.js"
+    },
+    {
+      "src": "/",
+      "dest": "build/index.html"
+    },
+    {
+      "src": "/(.+)",
+      "dest": "build/$1"
+    }
+  ]
+}
