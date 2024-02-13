@@ -171,7 +171,7 @@ export const razorpayInstance = new Razorpay({
 //Connects to the MongoDB database using the connectToDatabase function.
 async function connectToDatabase() {
     try {
-      await mongoose.connect(process.env.MONGODB_URL);
+      await mongoose.connect(process.env.MONGODB_ATLAS);
       console.log("Connected to MongoDB");
     } catch (error) {
       console.error("Error connecting to MongoDB:", error.message);
