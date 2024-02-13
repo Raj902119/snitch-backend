@@ -3,7 +3,7 @@
   "version": 2,
   "builds": [
     {
-      "src": "index.js",
+      "src": "index.mjs",
       "use": "@vercel/node"
     },
     {
@@ -18,71 +18,71 @@
   "routes": [
     {
       "src": "/auth/(.*)",
-      "dest": "index.js"
+      "dest": "index.mjs"
     },
     {
       "src": "/product/(.*)",
-      "dest": "index.js"
+      "dest": "index.mjs"
     },
     {
       "src": "/category/(.*)",
-      "dest": "index.js"
+      "dest": "index.mjs"
     },
     {
       "src": "/brand/(.*)",
-      "dest": "index.js"
+      "dest": "index.mjs"
     },
     {
       "src": "/user/(.*)",
-      "dest": "index.js"
+      "dest": "index.mjs"
     },
     {
       "src": "/cart/(.*)",
-      "dest": "index.js"
+      "dest": "index.mjs"
     },
     {
       "src": "/order/(.*)",
-      "dest": "index.js"
+      "dest": "index.mjs"
     },
     {
       "src": "/api/(.*)",
-      "dest": "index.js"
+      "dest": "index.mjs"
     },
     {
       "src": "/auth",
-      "dest": "index.js"
+      "dest": "index.mjs"
     },
     {
       "src": "/product",
-      "dest": "index.js"
+      "dest": "index.mjs"
     },
     {
       "src": "/category",
-      "dest": "index.js"
+      "dest": "index.mjs"
     },
     {
       "src": "/brand",
-      "dest": "index.js"
+      "dest": "index.mjs"
     },
     {
       "src": "/user",
-      "dest": "index.js"
+      "dest": "index.mjs"
     },
     {
       "src": "/cart",
-      "dest": "index.js"
+      "dest": "index.mjs"
     },
     {
       "src": "/order",
-      "dest": "index.js"
+      "dest": "index.mjs"
     },
     {
       "src": "/api",
-      "dest": "index.js"
+      "dest": "index.mjs"
     },
     {
       "src": "/api/getkey",
-      "dest": "index.js"
+      "dest": "index.mjs"
     },
     {
       "src": "/",
